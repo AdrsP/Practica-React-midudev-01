@@ -58,7 +58,9 @@
 
 .tw-followCard-button.is-following:hover .tw-followCard-stopFollow {
   display: block;
-}
+} /* esta sintaxis se usa para trabajar con un evento del padre y que el cambio ocurra en el children
+por ejemplo la clase tw-followCard-button es de una etiqueta button que es padre del span que tiene 
+como clase la etiqueta tw-followCard-StopFollow, y permite que se vea su contenido con el display block*/
 
 .tw-followCard-button.is-following:hover .tw-followCard-buttonText {
   display: none;
@@ -74,5 +76,7 @@ body {
 }
 
 /*Nota esta manera de nombrar los className para los estilos de ccs se llama
-suit para manejarlos mejor de una forma semantica y ganar puntos con goole 
-en el buscador */
+suit para manejarlos mejor de una forma semantica y ganar puntos con google 
+en el buscador, en este caso se nombran como titulo de la app tw guion - nombre del
+componente - guion nombre elemento etiqueta html - guion elemento o etiqueta html hija 
+del elemento previo */
