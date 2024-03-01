@@ -26,7 +26,8 @@ export const TwitterFollowCard = ({children, userName="valor por defecto", forma
       </header>
       <aside>
         <button className={buttonClassName} onClick={handleClick} >
-          {text}
+          <span className="tw-followCard-buttonText" >{text}</span>
+          <span className="tw-followCard-stopFollow">Dejar de seguir</span>
         </button>
       </aside>
     </article>
